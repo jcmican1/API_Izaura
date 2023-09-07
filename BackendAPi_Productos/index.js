@@ -27,6 +27,11 @@ const rolesRouter = require('./routers/rolesRouter');
 const usuariosRouter = require('./routers/usuariosRouter');
 const notificacionesRouter = require('./routers/notificacionesRouter');
 const usuarioNotificacionesRouter = require('./routers/usuarioNotificacionesRouter');
+const proveedorRouter = require('./routers/proveedorRouter');
+const ubicacionAlmacenRouter = require('./routers/ubicacionAlmacenRouter');
+const existenciasRouter = require('./routers/existenciasRouter');
+const movimientoRouter = require('./routers/movimientoRouter');
+const motivoRouter = require('./routers/motivoRouter');
 
 // Usa los enrutadores
 app.use('/plantillaproducto', plantillaProductoRouter);
@@ -35,6 +40,11 @@ app.use('/roles', rolesRouter);
 app.use('/usuarios', usuariosRouter);
 app.use('/notificaciones', notificacionesRouter);
 app.use('/usuario-notificaciones', usuarioNotificacionesRouter);
+app.use('/proveedor', proveedorRouter);
+app.use('/ubicacion-almacen/', ubicacionAlmacenRouter);
+app.use('/existencias', existenciasRouter);
+app.use('/movimiento', movimientoRouter);
+app.use('/motivo', motivoRouter);
 
 //comienzo de rutas
 
